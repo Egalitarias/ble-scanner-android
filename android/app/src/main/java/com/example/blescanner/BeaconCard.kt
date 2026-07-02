@@ -1,4 +1,4 @@
-package com.example.blescanner.ui.theme
+package com.example.blescanner
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
