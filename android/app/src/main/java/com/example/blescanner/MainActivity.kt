@@ -124,7 +124,7 @@ private fun ScannerApp(activity: MainActivity) {
             Slider(
                 value = minRssi,
                 onValueChange = { minRssi = it },
-                valueRange = -100f..-30f
+                valueRange = -90f..-40f
             )
 
             val filtered = remember(devices, minRssi) {
