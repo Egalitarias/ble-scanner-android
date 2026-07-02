@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">BleScanner</string>
+    <string name="start_scan">Start scan</string>
+    <string name="stop_scan">Stop scan</string>
+    <string name="status_scanning">Scanning in foreground service</string>
+    <string name="status_stopped">Scanner stopped</string>
     <string name="unknown_device_name">Unknown device</string>
+    <string name="permissions_rationale">Bluetooth and notification permissions are required for BLE scanning and background service notifications.</string>
+    <string name="permissions_denied">Required permissions were denied.</string>
+    <string name="rssi_filter">Minimum RSSI: %1$d dBm</string>
+    <string name="no_devices">No devices match the filter yet.</string>
+    <string name="notification_channel_name">BLE scanning</string>
+    <string name="notification_title">BLE scanning active</string>
+    <string name="notification_text">Scanning nearby BLE devices in background</string>
 </resources>
