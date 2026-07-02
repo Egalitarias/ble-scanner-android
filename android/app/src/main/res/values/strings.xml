@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BleScanner</string>
+    <string name="unknown_device_name">Unknown device</string>
 </resources>
