@@ -5,7 +5,7 @@
     <string name="status_scanning">Scanning in foreground service</string>
     <string name="status_stopped">Scanner stopped</string>
     <string name="unknown_device_name">Unknown device</string>
-    <string name="permissions_rationale">Bluetooth and notification permissions are required for BLE scanning and background service notifications.</string>
+    <string name="permissions_rationale">Bluetooth, location, and notification permissions are required for BLE scanning and background service notifications.</string>
     <string name="permissions_denied">Required permissions were denied.</string>
     <string name="rssi_filter">Minimum RSSI: %1$d dBm</string>
     <string name="no_devices">No devices match the filter yet.</string>
