@@ -5,14 +5,14 @@ import android.content.Context
 import android.os.Build
 import androidx.core.content.ContextCompat
 
-fun requiredBlePermissions(): List<String> {
+fun requiredBlePermissions(sdkInt: Int = Build.VERSION.SDK_INT): List<String> {
     val permissions = mutableListOf<String>()
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+    if (sdkInt >= Build.VERSION_CODES.S) {
         permissions += Manifest.permission.BLUETOOTH_SCAN
         permissions += Manifest.permission.BLUETOOTH_CONNECT
     }
     permissions += Manifest.permission.ACCESS_FINE_LOCATION
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+    if (sdkInt >= Build.VERSION_CODES.TIRAMISU) {
         permissions += Manifest.permission.POST_NOTIFICATIONS
     }
     return permissions

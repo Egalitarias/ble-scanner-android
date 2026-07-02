@@ -20,7 +20,12 @@ object IBeaconParser {
     private const val APPLE_COMPANY_ID = 0x004C
 
     fun parse(scanRecord: ScanRecord?): IBeaconData? {
-        val manufacturerData = scanRecord?.getManufacturerSpecificData(APPLE_COMPANY_ID) ?: return null
+        val manufacturerData = scanRecord?.getManufacturerSpecificData(APPLE_COMPANY_ID)
+        return parseManufacturerData(manufacturerData)
+    }
+
+    internal fun parseManufacturerData(manufacturerData: ByteArray?): IBeaconData? {
+        if (manufacturerData == null) return null
         if (manufacturerData.size < 23) return null
         if (manufacturerData[0].toInt() != 0x02 || manufacturerData[1].toInt() != 0x15) return null
 
